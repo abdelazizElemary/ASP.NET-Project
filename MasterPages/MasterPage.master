@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Arrow Com - free website template, css layout</title>
+<meta name="keywords" content="arrow com, free css, website templates, CSS, XHTML" />
+<meta name="description" content="Arrow Com webiste - free website template provided by TemplateMo.com" />
+<link href="../CSS/templatemo_style.css" rel="stylesheet" type="text/css" />
+<link href="../CSS/animate.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="templatemo_container">
+<!-- Free CSS Templates @ www.TemplateMo.com -->
+	<div id="templatemo_header_panel">
+    	<div id="site_title">
+        	CRUD WEB APP
+        </div>
+        <%--<div id="header_links">
+        	<a href="#">Sitemap</a> | <a href="#">Login</a> | <a href="#">Contact</a>
+        </div>--%>
+    </div> <!-- end of header panel -->
+
+    <div id="templatemo_menu">
+    	<ul>
+            <li><a href="#" class="current"><span></span>Home</a></li>
+        </ul>
+
+    </div> <!-- end of menu -->
+
+  <div id="templatemo_content">
+    
+    <asp:ContentPlaceHolder ID="mainContent" runat="server">
+
+    </asp:ContentPlaceHolder>
+    
+    </div> <!-- end of content -->
+    
+	<div id="templatemo_footer"> 
+    	<div id="top"></div>  
+    	Copyright © <%=DateTime.Now.Year%>> <a href="#"><strong>CRUD WEB APP</strong></a> | by <a href="https://www.linkedin.com/in/abdelaziz-elemary/" target="_blank">Abdelaziz Elemary</a>
+        <div id="bottom"></div> 
+	</div> <!-- end of footer -->
+<!-- Free Website Templates @ TemplateMo.com -->
+</div> <!-- end of container -->
+</form>
+</body>
+
+    <script src="../js/wow.min.js"></script>
+       <script>
+        new WOW().init();
+       </script>
+
+</html>
